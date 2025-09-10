@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ahmad Alzein - AI Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <title>Ahmad Alzein - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <style>
-    /* Base */
+    /* Reset */
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
       font-family: 'Inter', sans-serif;
-      background: #0A0A0A;
-      color: #EAEAEA;
-      line-height: 1.7;
+      background: #ffffff;
+      color: #333;
+      line-height: 1.8;
       scroll-behavior: smooth;
     }
+
     a { text-decoration: none; color: inherit; }
 
     .container {
@@ -26,129 +28,145 @@
     /* Header */
     header {
       position: fixed; top: 0; width: 100%;
-      background: rgba(10,10,10,0.9);
+      background: rgba(255, 255, 255, 0.97);
       backdrop-filter: blur(6px);
       z-index: 1000; padding: 1rem 0;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
+      border-bottom: 1px solid rgba(0,0,0,0.05);
     }
     nav {
-      display: flex; justify-content: space-between; align-items: center;
-    }
-    .logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.5rem; font-weight: 700;
-      color: #00A8E8;
+      display: flex; justify-content: center; align-items: center;
     }
     .nav-links {
       display: flex; gap: 2rem; list-style: none;
     }
     .nav-links a {
-      font-weight: 500; transition: color 0.3s;
+      font-weight: 500; color: #444;
+      transition: color 0.3s;
     }
-    .nav-links a:hover { color: #7B61FF; }
+    .nav-links a:hover { color: #0066cc; }
 
     /* Hero */
     .hero {
-      height: 100vh; display: flex;
-      justify-content: center; align-items: center;
-      text-align: center; flex-direction: column;
-      padding: 0 20px;
+      padding: 160px 20px 100px;
+      text-align: center;
     }
     .hero h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 3.2rem; margin-bottom: 1rem;
+      font-size: 3.5rem; margin-bottom: 0.5rem;
+      color: #111;
+    }
+    .hero h2 {
+      font-size: 1.6rem; margin-bottom: 1rem;
+      font-weight: 400; color: #555;
     }
     .hero p {
-      font-size: 1.2rem; opacity: 0.9;
-      max-width: 650px; margin: auto;
-      margin-bottom: 2rem;
+      font-size: 1.2rem; max-width: 700px;
+      margin: auto; margin-bottom: 2rem;
+      color: #666;
     }
     .cta-button {
       display: inline-block;
       padding: 14px 36px; border-radius: 40px;
-      background: linear-gradient(135deg,#00A8E8,#7B61FF);
+      background: linear-gradient(135deg,#0066cc,#764ba2);
       color: #fff; font-weight: bold;
-      transition: transform 0.3s;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-    .cta-button:hover { transform: translateY(-3px); }
+    .cta-button:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,0.15); }
 
     /* Section Titles */
     .section-title {
       font-family: 'Playfair Display', serif;
-      font-size: 2rem; text-align: center;
-      margin-bottom: 2.5rem; position: relative;
+      font-size: 2.2rem; text-align: center;
+      margin-bottom: 2.5rem; color: #111;
     }
     .section-title::after {
       content: ''; width: 60px; height: 3px;
-      background: linear-gradient(90deg,#00A8E8,#7B61FF);
+      background: linear-gradient(90deg,#0066cc,#764ba2);
       display: block; margin: 10px auto 0;
     }
 
     /* About */
     .about { padding: 100px 0; }
-    .about p { max-width: 800px; margin: auto; font-size: 1.1rem; text-align: center; }
+    .about p {
+      max-width: 850px; margin: auto;
+      font-size: 1.15rem; text-align: center;
+      color: #444;
+    }
 
     /* Projects */
-    .projects { padding: 100px 0; }
+    .projects { padding: 100px 0; background: #fafafa; }
     .projects-grid {
       display: grid; gap: 2rem;
-      grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     }
     .project-card {
-      background: #151515; border-radius: 12px; padding: 2rem;
-      border: 1px solid rgba(255,255,255,0.08);
-      transition: transform 0.3s, border-color 0.3s;
+      background: #fff; border-radius: 12px;
+      padding: 2rem; border: 1px solid rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
-    .project-card:hover { transform: translateY(-6px); border-color: #00A8E8; }
-    .project-card h3 { margin-bottom: 1rem; color: #fff; font-size: 1.3rem; }
-    .project-card p { color: #bbb; font-size: 0.95rem; }
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    .project-card h3 {
+      margin-bottom: 1rem; color: #222;
+      font-size: 1.3rem;
+    }
+    .project-card p { color: #555; font-size: 1rem; }
 
     /* Skills */
     .skills { padding: 100px 0; }
     .skills-grid {
       display: grid; grid-template-columns: 1fr 1fr;
-      gap: 2rem; color: #ddd;
+      gap: 2rem; color: #444;
     }
     .skills-category h4 {
-      color: #00A8E8; margin-bottom: .5rem;
+      color: #0066cc; margin-bottom: .5rem;
       font-size: 1.1rem;
     }
     .skills-category ul { list-style: none; padding-left: 1rem; }
     .skills-category li { margin-bottom: .4rem; position: relative; }
     .skills-category li::before {
-      content: "—"; color: #7B61FF;
+      content: "—"; color: #764ba2;
       position: absolute; left: -1rem;
     }
-
-    /* Quote */
-    .quote { text-align: center; padding: 80px 20px; font-size: 1.3rem; font-style: italic; color: #aaa; }
 
     /* Contact */
     .contact {
       padding: 100px 0; text-align: center;
-      background: #151515;
     }
-    .contact p { margin-bottom: 1rem; font-size: 1.1rem; }
-    .contact a { color: #00A8E8; font-weight: bold; }
+    .contact p { margin-bottom: 1rem; font-size: 1.15rem; color: #333; }
+    .contact a { color: #0066cc; font-weight: bold; }
 
     /* Footer */
     footer {
       text-align: center; padding: 20px;
       font-size: 0.9rem; color: #666;
-      border-top: 1px solid rgba(255,255,255,0.05);
+      border-top: 1px solid rgba(0,0,0,0.05);
+    }
+
+    /* Animations */
+    [data-animate] {
+      opacity: 0; transform: translateY(20px);
+      transition: all 0.8s ease;
+    }
+    [data-animate].visible {
+      opacity: 1; transform: translateY(0);
     }
 
     /* Responsive */
     @media (max-width:768px) {
       .skills-grid { grid-template-columns: 1fr; }
-      .hero h1 { font-size: 2.4rem; }
+      .hero h1 { font-size: 2.6rem; }
     }
   </style>
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <nav class="container">
-      <div class="logo">Ahmad Alzein</div>
+    <nav>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -161,46 +179,49 @@
 
   <!-- Hero -->
   <section id="home" class="hero">
-    <h1>Computer Vision & AI Engineer</h1>
+    <h1>Ahmad Alzein</h1>
+    <h2>Computer Vision & AI Engineer</h2>
     <p>Transforming research into production-ready AI systems — from digital pathology to autonomous drones.</p>
     <a href="#contact" class="cta-button">Let’s Collaborate</a>
   </section>
 
   <!-- About -->
-  <section id="about" class="about container">
+  <section id="about" class="about container" data-animate>
     <h2 class="section-title">About Me</h2>
     <p>
-      I’m Ahmad Alzein, a Computer Vision & AI Engineer passionate about turning vision research into scalable products.  
+      I’m Ahmad Alzein, an AI Engineer passionate about turning vision research into scalable products.  
       I’ve built production pipelines for digital pathology, scaling to tens of thousands of patients, and developed a modular drone vision framework combining 3D reconstruction, detection, and SLAM.  
       Today, I apply my expertise to design robust, explainable, and impactful AI systems for healthcare, robotics, and beyond.
     </p>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="projects container">
-    <h2 class="section-title">Featured Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Digital Pathology Pipeline (Production-Scale)</h3>
-        <p>WSI preprocessing pipeline with artifact detection, tiling, color normalization, and inference orchestration. Deployed on AWS, serving 20k+ patients.</p>
-      </div>
-      <div class="project-card">
-        <h3>WSInfer + WESUP Integration</h3>
-        <p>Deep learning workflow for weakly/fully supervised pathology tasks. Includes inference heatmaps and visualization for clinical review.</p>
-      </div>
-      <div class="project-card">
-        <h3>Autonomous Drone Vision System</h3>
-        <p>Modular system for 3D reconstruction, SLAM, and real-time detection. Designed for multi-drone coordination and GPS-denied environments.</p>
-      </div>
-      <div class="project-card">
-        <h3>Advanced Preprocessing Tools</h3>
-        <p>Custom image preprocessing utilities: ROI extraction, contour-based patching, artifact removal, and stain normalization.</p>
+  <section id="projects" class="projects" data-animate>
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Digital Pathology Pipeline (Production-Scale)</h3>
+          <p>WSI preprocessing pipeline with artifact detection, tiling, color normalization, and inference orchestration. Deployed on AWS, serving 20k+ patients.</p>
+        </div>
+        <div class="project-card">
+          <h3>WSInfer + WESUP Integration</h3>
+          <p>Deep learning workflow for weakly/fully supervised pathology tasks. Includes inference heatmaps and visualization for clinical review.</p>
+        </div>
+        <div class="project-card">
+          <h3>Autonomous Drone Vision System</h3>
+          <p>Modular system for 3D reconstruction, SLAM, and real-time detection. Designed for multi-drone coordination and GPS-denied environments.</p>
+        </div>
+        <div class="project-card">
+          <h3>Advanced Preprocessing Tools</h3>
+          <p>Custom image preprocessing utilities: ROI extraction, contour-based patching, artifact removal, and stain normalization.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills" class="skills container">
+  <section id="skills" class="skills container" data-animate>
     <h2 class="section-title">Skills</h2>
     <div class="skills-grid">
       <div class="skills-category">
@@ -243,13 +264,8 @@
     </div>
   </section>
 
-  <!-- Quote -->
-  <section class="quote">
-    “Build systems that last. Research is great, but impact comes from what you put in people’s hands.”
-  </section>
-
   <!-- Contact -->
-  <section id="contact" class="contact">
+  <section id="contact" class="contact" data-animate>
     <h2 class="section-title">Contact</h2>
     <p>📩 Email: <a href="mailto:ahmadalzein.fr@gmail.com">ahmadalzein.fr@gmail.com</a></p>
     <p>💻 GitHub: <a href="https://github.com/Ahmad-Alzein" target="_blank">github.com/Ahmad-Alzein</a></p>
@@ -257,8 +273,23 @@
   </section>
 
   <footer>
-    <p>© 2025 Ahmad Alzein</p>
+    <p>© 2025 Ahmad Alzein | “Build systems that last. Research is great, but impact comes from what you put in people’s hands.”</p>
   </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const elements = document.querySelectorAll("[data-animate]");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
+
 
