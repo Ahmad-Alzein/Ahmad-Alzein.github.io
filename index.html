@@ -382,37 +382,159 @@
 
 
       <!--==================== QUALIFICATION ====================-->
+      <!-- ==================== QUALIFICATION ==================== -->
       <section class="qualification section" id="qualification">
         <h2 class="section__title">Qualification</h2>
-        <span class="section__subtitle">Academic & Professional Journey</span>
+        <span class="section__subtitle">My professional journey</span>
+
         <div class="qualification__container container">
-          <div class="qualification__sections">
-            <div class="qualification__content qualification__active" id="education">
-              <div class="qualification__data">
-                <h3 class="qualification__title">MSc Biomedical Engineering</h3>
-                <span class="qualification__subtitle">Grenoble INP – PHELMA</span>
-                <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i>2021–2023</div>
-              </div>
-              <div class="qualification__data">
-                <h3 class="qualification__title">BSc Biomedical Engineering</h3>
-                <span class="qualification__subtitle">Beirut Arab University</span>
-                <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i>2017–2021</div>
-              </div>
+          <div class="qualification__tabs">
+            <!-- Work first -->
+            <div class="qualification__button button--flex qualification__active" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              Work
             </div>
-            <div class="qualification__content" id="work">
+            <div class="qualification__button button--flex" data-target="#education">
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+          </div>
+
+          <div class="qualification__sections">
+            <!-- ==================== WORK ==================== -->
+            <div class="qualification__content qualification__active" data-content id="work">
+
+              <!-- Work 1 -->
               <div class="qualification__data">
-                <h3 class="qualification__title">AI Engineer (Computer Vision)</h3>
-                <span class="qualification__subtitle">Veracyte, France</span>
-                <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i>2022–2024</div>
+                <div>
+                  <h3 class="qualification__title">Computer Vision & AI Engineer</h3>
+                  <span class="qualification__subtitle">VERACYTE Inc, Marseille</span>
+                  <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> Aug 2023 – Aug 2025</div>
+                  <p class="qualification__details">
+                    • Developed and deployed deep learning models for cancer grade detection on WSIs + transcriptomic data.<br/>
+                    • Automated QC pipelines (>20,000 slides) for artifact filtering & stain normalization.<br/>
+                    • Built AWS + Docker pipeline for preprocessing & inference across multiple sites.<br/>
+                    • Improved robustness against domain shifts; contributed to multimodal prototype-based Transformers.<br/>
+                    • Applied optimization (scalable pipelines, compression-aware deployment) for reproducibility & security.
+                  </p>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <div class="qualification__line"></div>
+                </div>
               </div>
+
+              <!-- Work 2 -->
               <div class="qualification__data">
-                <h3 class="qualification__title">Independent Research & Projects</h3>
-                <span class="qualification__subtitle">3D Vision, Biometrics, Fairness</span>
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <div class="qualification__line"></div>
+                </div>
+                <div>
+                  <h3 class="qualification__title">Computer Vision & AI Engineer</h3>
+                  <span class="qualification__subtitle">Independent R&D (Remote)</span>
+                  <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> Jan 2025 – Present</div>
+                  <p class="qualification__details">
+                    • Designed drone-based pipeline for real-time detection, 3D reconstruction & navigation (SLAM).<br/>
+                    • Built datasets from AirSim + UAV data with custom annotation & augmentation.<br/>
+                    • Deployed optimized models (FP16/INT8 quantization, pruning) on Jetson Xavier/Nano.<br/>
+                    • Validated planning strategies in ROS/Gazebo for multi-UAV exploration.<br/>
+                    • Extended with a facial recognition module to test robustness under low-resolution.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Work 3 -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Computer Vision & AI Intern</h3>
+                  <span class="qualification__subtitle">Stellantis / Institut des Sciences du Mouvement</span>
+                  <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> Feb 2023 – Jul 2023</div>
+                  <p class="qualification__details">
+                    • Studied human-machine interaction for alternative control in vehicles.<br/>
+                    • Conducted experiments capturing gestures & motion patterns with GoPro.<br/>
+                    • Used MediaPipe for pose estimation & keypoint extraction.<br/>
+                    • Built a pipeline to analyze hand motions and intuitiveness of interface design.
+                  </p>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <div class="qualification__line"></div>
+                </div>
+              </div>
+
+              <!-- Work 4 -->
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+                <div>
+                  <h3 class="qualification__title">Signal Processing Intern</h3>
+                  <span class="qualification__subtitle">GIPSA-LAB</span>
+                  <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> Sep 2022 – Jan 2023</div>
+                  <p class="qualification__details">
+                    • Applied sEMG signal processing to improve muscle activity analysis.<br/>
+                    • Developed advanced source separation to reduce cross-talk.<br/>
+                    • Recorded + synchronized sEMG with finger force measurements for hand rehab studies.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- ==================== EDUCATION ==================== -->
+            <div class="qualification__content" data-content id="education">
+              <!-- Education 1 -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">MSc Biomedical Engineering</h3>
+                  <span class="qualification__subtitle">Grenoble INP – PHELMA</span>
+                  <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> 2021 – 2023</div>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <div class="qualification__line"></div>
+                </div>
+              </div>
+
+              <!-- Education 2 -->
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <div class="qualification__line"></div>
+                </div>
+                <div>
+                  <h3 class="qualification__title">BSc Biomedical Engineering</h3>
+                  <span class="qualification__subtitle">Beirut Arab University</span>
+                  <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> 2017 – 2021</div>
+                </div>
+              </div>
+
+              <!-- Education 3: Courses -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Specialized AI & CV Courses</h3>
+                  <span class="qualification__subtitle">DeepLearning.AI, The AI Engineer Program, Coursera</span>
+                  <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> 2022 – 2024</div>
+                  <p class="qualification__details">
+                    • MLOps specialization<br/>
+                    • Software Engineering for AI<br/>
+                    • AI for Medicine<br/>
+                    • Advanced Computer Vision
+                  </p>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
 
       <!--==================== CERTIFICATIONS ====================-->
       <section class="certification section" id="certifications">
