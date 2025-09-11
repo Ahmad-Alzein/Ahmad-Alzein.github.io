@@ -34,6 +34,7 @@
             <li class="nav__item"><a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i> About</a></li>
             <li class="nav__item"><a href="#skills" class="nav__link"><i class="uil uil-atom nav__icon"></i> Skills</a></li>
             <li class="nav__item"><a href="#qualification" class="nav__link"><i class="uil uil-book-alt nav__icon"></i> Qualifications</a></li>
+            <li class="nav__item"><a href="#certifications" class="nav__link"><i class="uil uil-file-alt nav__icon"></i> Certifications</a></li>
             <li class="nav__item"><a href="#projects" class="nav__link"><i class="uil uil-desktop-alt nav__icon"></i> Projects</a></li>
             <li class="nav__item"><a href="#blog" class="nav__link"><i class="uil uil-newspaper nav__icon"></i> Blog</a></li>
             <li class="nav__item"><a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i> Contact</a></li>
@@ -90,10 +91,10 @@
             <p class="about__description">
               I’m Ahmad Alzein, an AI Engineer with experience in building and deploying large-scale AI systems.  
               My work bridges digital pathology pipelines and autonomous drone systems.  
-              I focus on creating AI solutions that are **robust, fair, and trustworthy**.
+              I focus on creating AI solutions that are **robust, scalable, and trustworthy**.
             </p>
             <div class="about__buttons">
-              <a href="assets/docs/cyborg_resume.pdf" download class="my-resume-btn button button--flex">My Resume <i class="uil uil-download-alt button__icon"></i></a>
+              <a href="assets/docs/Ahmad_Alzein_CV.pdf" download class="my-resume-btn button button--flex">My Resume <i class="uil uil-download-alt button__icon"></i></a>
             </div>
           </div>
         </div>
@@ -104,22 +105,18 @@
         <h2 class="section__title">Skills</h2>
         <span class="section__subtitle">Technical Expertise</span>
         <div class="skills__container container grid">
-          <!-- Languages -->
           <div class="skills__content skills__open">
             <div class="skills__header"><i class="uil uil-brackets-curly skills__icon"></i><h1 class="skills__title">Languages</h1></div>
             <div class="skills__list grid"><span>Python, C++, MATLAB, Bash, SQL</span></div>
           </div>
-          <!-- AI -->
           <div class="skills__content skills__close">
             <div class="skills__header"><i class="uil uil-atom skills__icon"></i><h1 class="skills__title">AI & ML</h1></div>
             <div class="skills__list grid"><span>CNNs, Transformers, GANs, Diffusion, Fairness-aware ML</span></div>
           </div>
-          <!-- MLOps -->
           <div class="skills__content skills__close">
             <div class="skills__header"><i class="uil uil-server-network skills__icon"></i><h1 class="skills__title">MLOps & Deployment</h1></div>
             <div class="skills__list grid"><span>Docker, AWS, MLflow, DVC, GitHub Actions, TensorRT, ONNX</span></div>
           </div>
-          <!-- CV & Robotics -->
           <div class="skills__content skills__close">
             <div class="skills__header"><i class="uil uil-drone skills__icon"></i><h1 class="skills__title">Computer Vision & Robotics</h1></div>
             <div class="skills__list grid"><span>Detection, Segmentation, Tracking, SLAM, SfM, ROS, AirSim</span></div>
@@ -135,13 +132,14 @@
           <div class="qualification__sections">
             <div class="qualification__content qualification__active" id="education">
               <div class="qualification__data">
-                <h3 class="qualification__title">MSc Sciences & Management of Biotechnology</h3>
-                <span class="qualification__subtitle">Université Paris-Saclay</span>
-                <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i>2023–2025</div>
+                <h3 class="qualification__title">MSc Biomedical Engineering</h3>
+                <span class="qualification__subtitle">Grenoble INP – PHELMA</span>
+                <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i>2021–2023</div>
               </div>
               <div class="qualification__data">
-                <h3 class="qualification__title">Computer Vision & Deep Learning Research</h3>
-                <span class="qualification__subtitle">Autonomous Drones & Digital Pathology</span>
+                <h3 class="qualification__title">BSc Biomedical Engineering</h3>
+                <span class="qualification__subtitle">Beirut Arab University</span>
+                <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i>2017–2021</div>
               </div>
             </div>
             <div class="qualification__content" id="work">
@@ -155,6 +153,34 @@
                 <span class="qualification__subtitle">3D Vision, Biometrics, Fairness</span>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CERTIFICATIONS ====================-->
+      <section class="certification section" id="certifications">
+        <h2 class="section__title">Certifications</h2>
+        <span class="section__subtitle">Extra courses I have undertaken</span>
+        <div class="certification__container container grid">
+          <div class="certification__content">
+            <img src="assets/img/certifications/python-hackerrank.png" class="certification__img" />
+            <h4 class="certification__title">Python (Basic) Certificate</h4>
+            <h4 class="certification__subtitle">HackerRank – Credential ID A2349D590FEF</h4>
+          </div>
+          <div class="certification__content">
+            <img src="assets/img/certifications/mlops-ai-engineer.png" class="certification__img" />
+            <h4 class="certification__title">MLOps Specialization</h4>
+            <h4 class="certification__subtitle">The AI Engineer Program</h4>
+          </div>
+          <div class="certification__content">
+            <img src="assets/img/certifications/software-engineering-ai.png" class="certification__img" />
+            <h4 class="certification__title">Software Engineering for AI</h4>
+            <h4 class="certification__subtitle">The AI Engineer Program</h4>
+          </div>
+          <div class="certification__content">
+            <img src="assets/img/certifications/ai-for-medicine.png" class="certification__img" />
+            <h4 class="certification__title">AI for Medicine</h4>
+            <h4 class="certification__subtitle">DeepLearning.AI</h4>
           </div>
         </div>
       </section>
@@ -195,8 +221,18 @@
         <span class="section__subtitle">Let’s Collaborate</span>
         <div class="contact__container container grid">
           <div class="contact__information"><i class="uil uil-envelope contact__icon"></i><div><h3 class="contact__title">E-mail</h3><span class="contact__subtitle">ahmadalzein.fr@gmail.com</span></div></div>
-          <div class="contact__information"><i class="uil uil-map-marker contact__icon"></i><div><h3 class="contact__title">Location</h3><span class="contact__subtitle">France</span></div></div>
+          <div class="contact__information"><i class="uil uil-linkedin-alt contact__icon"></i><div><h3 class="contact__title">LinkedIn</h3><span class="contact__subtitle"><a href="https://www.linkedin.com/in/ahmad-alzein-01" target="_blank">linkedin.com/in/ahmad-alzein-01</a></span></div></div>
         </div>
+
+        <!-- Contact Form -->
+        <form action="https://formspree.io/f/xzbndvlb" method="POST" class="contact__form grid">
+          <div class="contact__inputs grid">
+            <div class="contact__content"><label for="name" class="contact__label">Name</label><input type="text" id="name" name="name" class="contact__input" required /></div>
+            <div class="contact__content"><label for="email" class="contact__label">E-mail</label><input type="email" id="email" name="email" class="contact__input" required /></div>
+            <div class="contact__content"><label for="message" class="contact__label">Message</label><textarea id="message" name="message" rows="6" class="contact__input" required></textarea></div>
+          </div>
+          <div class="contact__submit"><input type="submit" value="Send message" class="button button--flex" /></div>
+        </form>
       </section>
     </main>
 
@@ -206,7 +242,13 @@
         <div class="footer__container container grid">
           <div>
             <h1 class="footer__title">Ahmad Alzein</h1>
-            <span class="footer__subtitle">Building AI that is robust, scalable, and trustworthy</span>
+            <span class="footer__subtitle">MLOps | 3D Computer Vision | Biometrics & Fairness | Robotics</span><br />
+            <span class="footer__subtitle">Building AI that is robust, scalable, and trustworthy.</span>
+          </div>
+          <div class="footer__socials">
+            <a href="mailto:ahmadalzein.fr@gmail.com" target="_blank" class="footer__social"><i class="uil uil-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/ahmad-alzein-01" target="_blank" class="footer__social"><i class="uil uil-linkedin-alt"></i></a>
+            <a href="https://github.com/Ahmad-Alzein" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>
           </div>
         </div>
         <p class="footer__copy">&copy; 2025 Ahmad Alzein</p>
@@ -228,6 +270,7 @@
     </script>
   </body>
 </html>
+
 
 
 
