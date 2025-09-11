@@ -268,8 +268,8 @@ const typed_home = new Typed("#multiple-text", {
     "3D Vision & Robotics Enthusiast"
   ],
   typeSpeed: 60,
-  backSpeed: 35,
-  backDelay: 4000,   // 4s pause after phrase
+  backSpeed: 15,
+  backDelay: 10000,   // 4s pause after phrase
   loop: true,
 });
 
@@ -281,8 +281,8 @@ const typed_footer = new Typed("#multiple-text", {
     "3D Vision & Robotics Enthusiast"
   ],
   typeSpeed: 60,
-  backSpeed: 35,
-  backDelay: 4000,   // 4s pause after phrase
+  backSpeed: 15,
+  backDelay: 10000,   // 4s pause after phrase
   loop: true,
 });
 
