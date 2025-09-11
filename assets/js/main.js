@@ -263,7 +263,7 @@ ScrollReveal().reveal(".contact__container", { duration: 2000, delay: 50 });
 /*==================== TYPED JS ====================*/
 const typed_home = new Typed("#multiple-text", {
   strings: ["Computer Vision & AI Engineer", "MLOps & Deployment Specialist", "3D Vision & Robotics Enthusiast"],
-  typeSpeed: 60,
+  typeSpeed: 35,
   backSpeed: 35,
   backDelay: 2500,
   loop: true,
