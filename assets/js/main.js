@@ -270,12 +270,12 @@ const typed_home = new Typed("#multiple-text", {
   ],
   typeSpeed: 40,
   backSpeed: 15,
-  backDelay: 10000,   // 4s pause after phrase
+  backDelay: 4000,   // 4s pause after phrase
   loop: true,
 });
 
 
-const typed_footer = new Typed("#multiple-text", {
+const typed_footer = new Typed("#multiple-text-footer", {
   strings: [
     "Computer Vision ",
     "AI Engineer" , 
@@ -288,3 +288,10 @@ const typed_footer = new Typed("#multiple-text", {
   loop: true,
 });
 
+// const typed_footer = new Typed("#multiple-text-footer", {
+//   strings: ["Machine Learning Engineer", "Deep Learning Specialist"],
+//   typeSpeed: 100,
+//   backSpeed: 30,
+//   backDelay: 1000,
+//   loop: true,
+// });
