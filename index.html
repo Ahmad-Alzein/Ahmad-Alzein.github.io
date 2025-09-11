@@ -1,32 +1,25 @@
-<!--style inspired by: https://github.com/bedimcode -->
-<!--author: Ahmad Alzein -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <!--==================== META ====================-->
-    <meta name="description" content="Portfolio of Ahmad Alzein - Computer Vision & AI Engineer" />
-    <meta
-      name="keywords"
-      content="Ahmad Alzein, AI Engineer, Computer Vision, Deep Learning, Robotics, Biometrics, MLOps, Portfolio"
-    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Ahmad Alzein - Computer Vision & AI Engineer" />
+    <meta name="keywords" content="Ahmad Alzein, AI Engineer, Computer Vision, Deep Learning, Robotics, Biometrics, MLOps, Portfolio" />
     <title>Ahmad Alzein - Portfolio</title>
+
     <!--==================== UNICONS ====================-->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
+
     <!--==================== FAVICON ====================-->
-    <link
-      rel="shortcut icon"
-      href="assets/img/general/favicon.png"
-      type="image/png"
-    />
+    <link rel="shortcut icon" href="assets/img/general/favicon.png" type="image/png" />
+
     <!--==================== TYPED JS ====================-->
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
   </head>
@@ -37,41 +30,17 @@
         <a href="#" class="nav__logo">Ahmad Alzein</a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">
-                <i class="uil uil-estate nav__icon"></i> Home
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">
-                <i class="uil uil-user nav__icon"></i> About
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="uil uil-atom nav__icon"></i> Skills
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#qualification" class="nav__link">
-                <i class="uil uil-book-alt nav__icon"></i> Qualifications
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#projects" class="nav__link">
-                <i class="uil uil-desktop-alt nav__icon"></i> Projects
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i> Contact
-              </a>
-            </li>
+            <li class="nav__item"><a href="#home" class="nav__link active-link"><i class="uil uil-estate nav__icon"></i> Home</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i> About</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link"><i class="uil uil-atom nav__icon"></i> Skills</a></li>
+            <li class="nav__item"><a href="#qualification" class="nav__link"><i class="uil uil-book-alt nav__icon"></i> Qualifications</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link"><i class="uil uil-desktop-alt nav__icon"></i> Projects</a></li>
+            <li class="nav__item"><a href="#blog" class="nav__link"><i class="uil uil-newspaper nav__icon"></i> Blog</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i> Contact</a></li>
           </ul>
           <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
         <div class="nav__btns">
-          <!-- Theme change button -->
           <i class="uil uil-moon change-theme" id="theme-button"></i>
           <div class="nav__toggle" id="nav-toggle">
             <i class="uil uil-apps"></i>
@@ -87,24 +56,25 @@
         <div class="home__container container grid">
           <div class="home__content grid">
             <div class="home__social">
-              <a href="https://www.linkedin.com/in/ahmad-alzein-01" target="_blank" class="home__social-icon">
-                <i class="uil uil-linkedin-alt"></i>
-              </a>
-              <a href="https://github.com/Ahmad-Alzein" target="_blank" class="home__social-icon">
-                <i class="uil uil-github-alt"></i>
-              </a>
+              <a href="https://www.linkedin.com/in/ahmad-alzein-01" target="_blank" class="home__social-icon"><i class="uil uil-linkedin-alt"></i></a>
+              <a href="https://github.com/Ahmad-Alzein" target="_blank" class="home__social-icon"><i class="uil uil-github-alt"></i></a>
+            </div>
+            <div class="home__img">
+              <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0" mask-type="alpha">
+                  <path d="M190.312 36.4879C206.582 62.1187..."></path>
+                </mask>
+                <g mask="url(#mask0)">
+                  <path d="M190.312 36.4879C206.582 62.1187..."></path>
+                  <image class="home__blob-img" x="0" y="-10" href="assets/img/general/profile.png" />
+                </g>
+              </svg>
             </div>
             <div class="home__data">
               <h1 class="home__title">Hi, I’m <span class="home__colored-text">Ahmad</span></h1>
-              <h2 class="home__subtitle">
-                <span id="multiple-text"></span>
-              </h2>
-              <p class="home__description">
-                Computer Vision & AI Engineer | MLOps & Deployment | Research in Biometrics, Fairness & 3D Vision
-              </p>
-              <a href="#contact" class="home__button button button--flex">
-                Get in touch <i class="uil uil-envelope-alt button__icon"></i>
-              </a>
+              <h2 class="home__subtitle"><span id="multiple-text"></span></h2>
+              <p class="home__description">Computer Vision & AI Engineer | MLOps & Deployment | Research in Biometrics, Fairness & 3D Vision</p>
+              <a href="#contact" class="home__button button button--flex">Get in touch <i class="uil uil-envelope-alt button__icon"></i></a>
             </div>
           </div>
         </div>
@@ -115,25 +85,15 @@
         <h2 class="section__title">About me</h2>
         <span class="section__subtitle">Quick Introduction</span>
         <div class="about__container container grid">
+          <img src="assets/img/general/illustration.png" alt="About illustration" class="about__img" />
           <div class="about__data">
             <p class="about__description">
               I’m Ahmad Alzein, an AI Engineer with experience in building and deploying large-scale AI systems.  
-              My work bridges **digital pathology** (automated pipelines for WSI preprocessing and inference at scale) and **autonomous systems** (drones, SLAM, and 3D reconstruction).  
-              My current focus is on creating AI solutions that are not only high-performing, but also **robust, fair, and trustworthy**.
+              My work bridges digital pathology pipelines and autonomous drone systems.  
+              I focus on creating AI solutions that are **robust, fair, and trustworthy**.
             </p>
-            <div class="about__info">
-              <div>
-                <span class="about__info-title">3+</span>
-                <span class="about__info-name">Years Experience</span>
-              </div>
-              <div>
-                <span class="about__info-title">20k+</span>
-                <span class="about__info-name">Patients Served</span>
-              </div>
-              <div>
-                <span class="about__info-title">4+</span>
-                <span class="about__info-name">Flagship Projects</span>
-              </div>
+            <div class="about__buttons">
+              <a href="assets/docs/cyborg_resume.pdf" download class="my-resume-btn button button--flex">My Resume <i class="uil uil-download-alt button__icon"></i></a>
             </div>
           </div>
         </div>
@@ -144,62 +104,25 @@
         <h2 class="section__title">Skills</h2>
         <span class="section__subtitle">Technical Expertise</span>
         <div class="skills__container container grid">
+          <!-- Languages -->
           <div class="skills__content skills__open">
-            <div class="skills__header">
-              <i class="uil uil-brackets-curly skills__icon"></i>
-              <div>
-                <h1 class="skills__title">Languages & Tools</h1>
-                <span class="skills__subtitle">Core programming skills</span>
-              </div>
-              <i class="uil uil-angle-down skills__arrow"></i>
-            </div>
-            <div class="skills__list grid">
-              <span>Python, C++, MATLAB, Bash, SQL</span>
-            </div>
+            <div class="skills__header"><i class="uil uil-brackets-curly skills__icon"></i><h1 class="skills__title">Languages</h1></div>
+            <div class="skills__list grid"><span>Python, C++, MATLAB, Bash, SQL</span></div>
           </div>
+          <!-- AI -->
           <div class="skills__content skills__close">
-            <div class="skills__header">
-              <i class="uil uil-atom skills__icon"></i>
-              <div>
-                <h1 class="skills__title">AI & Machine Learning</h1>
-                <span class="skills__subtitle">Deep learning expertise</span>
-              </div>
-              <i class="uil uil-angle-down skills__arrow"></i>
-            </div>
-            <div class="skills__list grid">
-              <span>CNNs, Transformers, RNNs, GANs, Diffusion Models</span>
-              <span>Fairness-aware ML, Bias Mitigation, Trustworthy AI</span>
-              <span>Quantization, Pruning, Knowledge Distillation</span>
-            </div>
+            <div class="skills__header"><i class="uil uil-atom skills__icon"></i><h1 class="skills__title">AI & ML</h1></div>
+            <div class="skills__list grid"><span>CNNs, Transformers, GANs, Diffusion, Fairness-aware ML</span></div>
           </div>
+          <!-- MLOps -->
           <div class="skills__content skills__close">
-            <div class="skills__header">
-              <i class="uil uil-server-network skills__icon"></i>
-              <div>
-                <h1 class="skills__title">MLOps & Deployment</h1>
-              </div>
-              <i class="uil uil-angle-down skills__arrow"></i>
-            </div>
-            <div class="skills__list grid">
-              <span>Docker, AWS (S3, SageMaker, EC2)</span>
-              <span>MLflow, DVC, GitHub Actions</span>
-              <span>TensorRT, ONNX, FastAPI, Gradio</span>
-              <span>Embedded AI: Jetson Xavier/Nano, CUDA, Linux</span>
-            </div>
+            <div class="skills__header"><i class="uil uil-server-network skills__icon"></i><h1 class="skills__title">MLOps & Deployment</h1></div>
+            <div class="skills__list grid"><span>Docker, AWS, MLflow, DVC, GitHub Actions, TensorRT, ONNX</span></div>
           </div>
+          <!-- CV & Robotics -->
           <div class="skills__content skills__close">
-            <div class="skills__header">
-              <i class="uil uil-drone skills__icon"></i>
-              <div>
-                <h1 class="skills__title">Computer Vision & Robotics</h1>
-              </div>
-              <i class="uil uil-angle-down skills__arrow"></i>
-            </div>
-            <div class="skills__list grid">
-              <span>Object Detection, Segmentation, Tracking, Depth Estimation</span>
-              <span>SLAM, SfM, 3D Reconstruction, Point Cloud Processing</span>
-              <span>ROS, AirSim</span>
-            </div>
+            <div class="skills__header"><i class="uil uil-drone skills__icon"></i><h1 class="skills__title">Computer Vision & Robotics</h1></div>
+            <div class="skills__list grid"><span>Detection, Segmentation, Tracking, SLAM, SfM, ROS, AirSim</span></div>
           </div>
         </div>
       </section>
@@ -207,47 +130,29 @@
       <!--==================== QUALIFICATION ====================-->
       <section class="qualification section" id="qualification">
         <h2 class="section__title">Qualification</h2>
-        <span class="section__subtitle">My Academic & Professional Journey</span>
+        <span class="section__subtitle">Academic & Professional Journey</span>
         <div class="qualification__container container">
           <div class="qualification__sections">
             <div class="qualification__content qualification__active" id="education">
               <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">MSc Sciences & Management of Biotechnology</h3>
-                  <span class="qualification__subtitle">Université de Paris-Saclay</span>
-                  <div class="qualification__calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                    2023 – 2025
-                  </div>
-                </div>
-                <div><span class="qualification__rounder"></span></div>
+                <h3 class="qualification__title">MSc Sciences & Management of Biotechnology</h3>
+                <span class="qualification__subtitle">Université Paris-Saclay</span>
+                <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i>2023–2025</div>
               </div>
               <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">Computer Vision & Deep Learning (Research Projects)</h3>
-                  <span class="qualification__subtitle">Autonomous Drones, Digital Pathology</span>
-                </div>
-                <div><span class="qualification__rounder"></span></div>
+                <h3 class="qualification__title">Computer Vision & Deep Learning Research</h3>
+                <span class="qualification__subtitle">Autonomous Drones & Digital Pathology</span>
               </div>
             </div>
             <div class="qualification__content" id="work">
               <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">Computer Vision & AI Engineer</h3>
-                  <span class="qualification__subtitle">Veracyte (France)</span>
-                  <div class="qualification__calendar">
-                    <i class="uil uil-calendar-alt"></i>
-                    2022 – 2024
-                  </div>
-                </div>
-                <div><span class="qualification__rounder"></span></div>
+                <h3 class="qualification__title">AI Engineer (Computer Vision)</h3>
+                <span class="qualification__subtitle">Veracyte, France</span>
+                <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i>2022–2024</div>
               </div>
               <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">Independent Research & Projects</h3>
-                  <span class="qualification__subtitle">3D Vision, Drones, Fairness in AI</span>
-                </div>
-                <div><span class="qualification__rounder"></span></div>
+                <h3 class="qualification__title">Independent Research & Projects</h3>
+                <span class="qualification__subtitle">3D Vision, Biometrics, Fairness</span>
               </div>
             </div>
           </div>
@@ -260,40 +165,25 @@
         <span class="section__subtitle">Flagship Work</span>
         <div class="projects__container container swiper-container">
           <div class="swiper-wrapper">
-            <div class="projects__content grid swiper-slide">
-              <div class="projects__data">
-                <h3 class="projects__title">Digital Pathology Pipeline (Production-Scale)</h3>
-                <p class="projects__description">
-                  Designed and deployed an end-to-end WSI preprocessing pipeline: artifact detection, tiling, normalization, inference orchestration.  
-                  Deployed on AWS, processing data for 20k+ patients.
-                </p>
-              </div>
-            </div>
-            <div class="projects__content grid swiper-slide">
-              <div class="projects__data">
-                <h3 class="projects__title">WSInfer + WESUP Integration</h3>
-                <p class="projects__description">
-                  Deep learning framework for weakly/fully supervised pathology tasks with inference heatmaps and reproducibility focus.
-                </p>
-              </div>
-            </div>
-            <div class="projects__content grid swiper-slide">
-              <div class="projects__data">
-                <h3 class="projects__title">Autonomous Drone Vision System</h3>
-                <p class="projects__description">
-                  Modular system for 3D reconstruction, SLAM, and real-time detection.  
-                  Built for multi-drone coordination and GPS-denied environments.
-                </p>
-              </div>
-            </div>
-            <div class="projects__content grid swiper-slide">
-              <div class="projects__data">
-                <h3 class="projects__title">Advanced Preprocessing Tools</h3>
-                <p class="projects__description">
-                  Custom image preprocessing utilities: ROI extraction, contour-based patching, artifact removal, and stain normalization.
-                </p>
-              </div>
-            </div>
+            <div class="projects__content grid swiper-slide"><img src="assets/img/projects/project-1.png" alt="" class="projects__img" /><div class="projects__data"><h3 class="projects__title">Digital Pathology Pipeline</h3><p class="projects__description">Production-scale WSI pipeline on AWS.</p></div></div>
+            <div class="projects__content grid swiper-slide"><img src="assets/img/projects/project-2.jpg" alt="" class="projects__img" /><div class="projects__data"><h3 class="projects__title">WSInfer + WESUP</h3><p class="projects__description">Weakly & fully supervised pathology inference framework.</p></div></div>
+            <div class="projects__content grid swiper-slide"><img src="assets/img/projects/project-3.jpg" alt="" class="projects__img" /><div class="projects__data"><h3 class="projects__title">Autonomous Drone Vision</h3><p class="projects__description">3D reconstruction, SLAM, detection, multi-drone navigation.</p></div></div>
+            <div class="projects__content grid swiper-slide"><img src="assets/img/projects/project-4.jpg" alt="" class="projects__img" /><div class="projects__data"><h3 class="projects__title">Preprocessing Tools</h3><p class="projects__description">Artifact removal, ROI extraction, stain normalization.</p></div></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--==================== BLOG ====================-->
+      <section class="blog section" id="blog">
+        <h2 class="section__title">Blog</h2>
+        <span class="section__subtitle">Research & Articles</span>
+        <div class="blog__container container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="blog__content grid swiper-slide"><img src="assets/img/blog/reinforcement-learning-101.png" alt="" class="blog__img" /><div class="blog__data"><h3 class="blog__title">Reinforcement Learning Basics</h3><p class="blog__description">Intro article with simple explanations and visuals.</p></div></div>
+            <div class="blog__content grid swiper-slide"><img src="assets/img/blog/what-is-early-stopping.png" alt="" class="blog__img" /><div class="blog__data"><h3 class="blog__title">Early Stopping</h3><p class="blog__description">Explaining overfitting & solutions in PyTorch.</p></div></div>
+            <div class="blog__content grid swiper-slide"><img src="assets/img/blog/genetic-algorithm-implementation.png" alt="" class="blog__img" /><div class="blog__data"><h3 class="blog__title">Genetic Algorithms</h3><p class="blog__description">Optimization inspired by evolution.</p></div></div>
+            <div class="blog__content grid swiper-slide"><img src="assets/img/blog/neural-style-transfer.png" alt="" class="blog__img" /><div class="blog__data"><h3 class="blog__title">Neural Style Transfer</h3><p class="blog__description">Merging art and content with deep learning.</p></div></div>
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -301,25 +191,11 @@
 
       <!--==================== CONTACT ====================-->
       <section class="contact section" id="contact">
-        <h2 class="section__title">Contact Me</h2>
+        <h2 class="section__title">Contact</h2>
         <span class="section__subtitle">Let’s Collaborate</span>
         <div class="contact__container container grid">
-          <div>
-            <div class="contact__information">
-              <i class="uil uil-envelope contact__icon"></i>
-              <div>
-                <h3 class="contact__title">E-mail</h3>
-                <span class="contact__subtitle">ahmadalzein.fr@gmail.com</span>
-              </div>
-            </div>
-            <div class="contact__information">
-              <i class="uil uil-map-marker contact__icon"></i>
-              <div>
-                <h3 class="contact__title">Location</h3>
-                <span class="contact__subtitle">France</span>
-              </div>
-            </div>
-          </div>
+          <div class="contact__information"><i class="uil uil-envelope contact__icon"></i><div><h3 class="contact__title">E-mail</h3><span class="contact__subtitle">ahmadalzein.fr@gmail.com</span></div></div>
+          <div class="contact__information"><i class="uil uil-map-marker contact__icon"></i><div><h3 class="contact__title">Location</h3><span class="contact__subtitle">France</span></div></div>
         </div>
       </section>
     </main>
@@ -332,19 +208,14 @@
             <h1 class="footer__title">Ahmad Alzein</h1>
             <span class="footer__subtitle">Building AI that is robust, scalable, and trustworthy</span>
           </div>
-          <ul class="footer__links">
-            <li><a href="#about" class="footer__link">About</a></li>
-            <li><a href="#projects" class="footer__link">Projects</a></li>
-            <li><a href="#contact" class="footer__link">Contact</a></li>
-          </ul>
         </div>
         <p class="footer__copy">&copy; 2025 Ahmad Alzein</p>
       </div>
     </footer>
 
-    <!--==================== SWIPER JS ====================-->
+    <!--==================== JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
-    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/scrollreveal.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
       var typed = new Typed("#multiple-text", {
