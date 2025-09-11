@@ -1,25 +1,46 @@
+<!--style inspired by: https://github.com/bedimcode -->
+<!--author: Cyborg-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <!--==================== META ====================-->
+    <meta name="description" content="Ahmad Alzein Portfolio" />
+    <meta
+      name="keywords"
+      content="ahmadalzein,  ahmad alzein portfolio,"
+      />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio of Ahmad Alzein - Computer Vision & AI Engineer" />
-    <meta name="keywords" content="Ahmad Alzein, AI Engineer, Computer Vision, Deep Learning, Robotics, Biometrics, MLOps, Portfolio" />
-    <title>Ahmad Alzein - Portfolio</title>
-
+    <title>Cyborg - Portfolio</title>
     <!--==================== UNICONS ====================-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+      />
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css" />
-
     <!--==================== FAVICON ====================-->
-    <link rel="shortcut icon" href="assets/img/general/favicon.png" type="image/png" />
-
+    <link
+      rel="shortcut icon"
+      href="assets/img/general/favicon.png"
+      type="image/png"
+      />
+    <!--==================== GOOGLE ANALYTICS ====================-->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-KWYBRH7VQ4"
+      ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      
+      gtag("config", "G-KWYBRH7VQ4");
+    </script>
     <!--==================== TYPED JS ====================-->
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
   </head>
@@ -27,21 +48,54 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo">Ahmad Alzein</a>
+        <a href="#" class="nav__logo">Cyborg</a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
-            <li class="nav__item"><a href="#home" class="nav__link active-link"><i class="uil uil-estate nav__icon"></i> Home</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link"><i class="uil uil-user nav__icon"></i> About</a></li>
-            <li class="nav__item"><a href="#skills" class="nav__link"><i class="uil uil-atom nav__icon"></i> Skills</a></li>
-            <li class="nav__item"><a href="#qualification" class="nav__link"><i class="uil uil-book-alt nav__icon"></i> Qualifications</a></li>
-            <li class="nav__item"><a href="#certifications" class="nav__link"><i class="uil uil-file-alt nav__icon"></i> Certifications</a></li>
-            <li class="nav__item"><a href="#projects" class="nav__link"><i class="uil uil-desktop-alt nav__icon"></i> Projects</a></li>
-            <li class="nav__item"><a href="#blog" class="nav__link"><i class="uil uil-newspaper nav__icon"></i> Blog</a></li>
-            <li class="nav__item"><a href="#contact" class="nav__link"><i class="uil uil-message nav__icon"></i> Contact</a></li>
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+              <i class="uil uil-estate nav__icon"></i> Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+              <i class="uil uil-user nav__icon"></i> About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+              <i class="uil uil-atom nav__icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link">
+              <i class="uil uil-book-alt nav__icon"></i> Qualifications
+              </a>
+            </li>
+            <!-- <li class="nav__item"> -->
+            <!--   <a href="#certifications" class="nav__link"> -->
+            <!--   <i class="uil uil-file-alt nav__icon"></i> Certifications -->
+            <!--   </a> -->
+            <!-- </li> -->
+            <!-- <li class="nav__item"> -->
+              <a href="#projects" class="nav__link">
+              <i class="uil uil-desktop-alt nav__icon"></i> Projects
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#blog" class="nav__link">
+              <i class="uil uil-newspaper nav__icon"></i> Blog
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+              <i class="uil uil-message nav__icon"></i> Contact
+              </a>
+            </li>
           </ul>
           <i class="uil uil-times nav__close" id="nav-close"></i>
         </div>
         <div class="nav__btns">
+          <!-- Theme change button -->
           <i class="uil uil-moon change-theme" id="theme-button"></i>
           <div class="nav__toggle" id="nav-toggle">
             <i class="uil uil-apps"></i>
@@ -49,7 +103,6 @@
         </div>
       </nav>
     </header>
-
     <!--==================== MAIN ====================-->
     <main class="main">
       <!--==================== HOME ====================-->
