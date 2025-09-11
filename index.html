@@ -403,22 +403,7 @@
           <div class="qualification__sections">
             <!-- ==================== WORK ==================== -->
             <div class="qualification__content qualification__active" data-content id="work">
-
               <!-- Work 1 -->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">Computer Vision & AI Engineer</h3>
-                  <span class="qualification__subtitle">VERACYTE Inc, Marseille</span>
-                  <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> Aug 2023 – Aug 2025</div>
-                  <p class="qualification__details">Digital pathology · WSIs · Multimodal Transformers · Cloud pipelines (AWS, Docker)</p>
-                </div>
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <div class="qualification__line"></div>
-                </div>
-              </div>
-
-              <!-- Work 2 -->
               <div class="qualification__data">
                 <div></div>
                 <div>
@@ -431,6 +416,20 @@
                   <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> Jan 2025 – Present</div>
                   <p class="qualification__details">Drones · Object detection · 3D reconstruction · Navigation · Face recognition · Edge AI (Jetson)</p>
                   </p>
+                </div>
+              </div>
+
+              <!-- Work 2 -->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">Computer Vision & AI Engineer</h3>
+                  <span class="qualification__subtitle">VERACYTE Inc, Marseille</span>
+                  <div class="qualification__calendar"><i class="uil uil-calendar-alt"></i> Aug 2023 – Aug 2025</div>
+                  <p class="qualification__details">Digital pathology · WSIs · Multimodal Transformers · Cloud pipelines (AWS, Docker)</p>
+                </div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <div class="qualification__line"></div>
                 </div>
               </div>
 
@@ -519,7 +518,7 @@
 
 
       <!--==================== CERTIFICATIONS ====================-->
-      <section class="certification section" id="certifications">
+      <!-- <section class="certification section" id="certifications">
         <h2 class="section__title">Certifications</h2>
         <span class="section__subtitle">Extra courses I have undertaken</span>
         <div class="certification__container container grid">
@@ -544,25 +543,98 @@
             <h4 class="certification__subtitle">DeepLearning.AI</h4>
           </div>
         </div>
-      </section>
+      </section> -->
 
+      <!--==================== PROJECTS ====================-->
       <!--==================== PROJECTS ====================-->
       <section class="projects section" id="projects">
         <h2 class="section__title">Projects</h2>
-        <span class="section__subtitle">Flagship Work</span>
+        <span class="section__subtitle">Theories into practice</span>
+
         <div class="projects__container container swiper-container">
           <div class="swiper-wrapper">
-            <div class="projects__content grid swiper-slide"><img src="assets/img/projects/project-1.png" alt="" class="projects__img" /><div class="projects__data"><h3 class="projects__title">Digital Pathology Pipeline</h3><p class="projects__description">Production-scale WSI pipeline on AWS.</p></div></div>
-            <div class="projects__content grid swiper-slide"><img src="assets/img/projects/project-2.jpg" alt="" class="projects__img" /><div class="projects__data"><h3 class="projects__title">WSInfer + WESUP</h3><p class="projects__description">Weakly & fully supervised pathology inference framework.</p></div></div>
-            <div class="projects__content grid swiper-slide"><img src="assets/img/projects/project-3.jpg" alt="" class="projects__img" /><div class="projects__data"><h3 class="projects__title">Autonomous Drone Vision</h3><p class="projects__description">3D reconstruction, SLAM, detection, multi-drone navigation.</p></div></div>
-            <div class="projects__content grid swiper-slide"><img src="assets/img/projects/project-4.jpg" alt="" class="projects__img" /><div class="projects__data"><h3 class="projects__title">Preprocessing Tools</h3><p class="projects__description">Artifact removal, ROI extraction, stain normalization.</p></div></div>
+
+            <!--==================== PROJECT 1 ====================-->
+            <div class="projects__content grid swiper-slide">
+              <img src="assets/img/projects/project-1.png" alt="Drone Project" class="projects__img" />
+              <div class="projects__data">
+                <h3 class="projects__title">Autonomous Drone-Based Object Detection & 3D Reconstruction</h3>
+                <p class="projects__description">
+                  End-to-end drone vision system integrating real-time object detection, SLAM-based navigation, and 3D reconstruction.  
+                  Features dataset generation with AirSim simulations and deployment optimization on Jetson Xavier/Nano.
+                </p>
+                <a href="https://github.com/Ahmad-Alzein/Autonomous-Drone-Based-Object-Detection-and-3D-Reconstruction-System" 
+                  target="_blank" 
+                  class="button button--flex button--small projects__button">
+                  GitHub <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PROJECT 2 ====================-->
+            <div class="projects__content grid swiper-slide">
+              <img src="assets/img/projects/project-2.jpg" alt="WSI Preprocessing" class="projects__img" />
+              <div class="projects__data">
+                <h3 class="projects__title">WSI Preprocessing</h3>
+                <p class="projects__description">
+                  A scalable pipeline for preprocessing Whole Slide Images (WSIs) in digital pathology.  
+                  Includes artifact filtering, tiling, stain normalization, and integration with downstream AI pipelines.
+                </p>
+                <a href="https://github.com/Ahmad-Alzein/wsi-preprocessing" 
+                  target="_blank" 
+                  class="button button--flex button--small projects__button">
+                  GitHub <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PROJECT 3 ====================-->
+            <div class="projects__content grid swiper-slide">
+              <img src="assets/img/projects/project-3.jpg" alt="MLflow Tracking" class="projects__img" />
+              <div class="projects__data">
+                <h3 class="projects__title">MLflow Tracking & Experimentation</h3>
+                <p class="projects__description">
+                  MLflow-based framework for experiment tracking, model versioning, and reproducibility.  
+                  Enables systematic comparison of training runs with integrated logging and monitoring.
+                </p>
+                <a href="https://github.com/Ahmad-Alzein/MLflow-Tracking-Experimentation" 
+                  target="_blank" 
+                  class="button button--flex button--small projects__button">
+                  GitHub <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!--==================== PLACEHOLDER PROJECT (optional) ====================-->
+            <div class="projects__content grid swiper-slide">
+              <img src="assets/img/projects/project-4.jpg" alt="Coming Soon" class="projects__img" />
+              <div class="projects__data">
+                <h3 class="projects__title">More Projects Coming Soon</h3>
+                <p class="projects__description">
+                  Additional AI & CV projects are under review for publication or privacy constraints.  
+                  Selected works will be showcased here in the future.
+                </p>
+              </div>
+            </div>
+
           </div>
+
+          <!-- Swiper arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-projects-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-projects-icon"></i>
+          </div>
+
+          <!-- Swiper pagination -->
           <div class="swiper-pagination"></div>
         </div>
       </section>
 
+
       <!--==================== BLOG ====================-->
-      <section class="blog section" id="blog">
+      <!-- <section class="blog section" id="blog">
         <h2 class="section__title">Blog</h2>
         <span class="section__subtitle">Research & Articles</span>
         <div class="blog__container container swiper-container">
@@ -574,26 +646,86 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-      </section>
+      </section> -->
 
       <!--==================== CONTACT ====================-->
+      <!--==================== CONTACT ME ====================-->
       <section class="contact section" id="contact">
-        <h2 class="section__title">Contact</h2>
-        <span class="section__subtitle">Let’s Collaborate</span>
+        <h2 class="section__title">Contact me</h2>
+        <span class="section__subtitle">Wanna build some project? Let's discuss.</span>
         <div class="contact__container container grid">
-          <div class="contact__information"><i class="uil uil-envelope contact__icon"></i><div><h3 class="contact__title">E-mail</h3><span class="contact__subtitle">ahmadalzein.fr@gmail.com</span></div></div>
-          <div class="contact__information"><i class="uil uil-linkedin-alt contact__icon"></i><div><h3 class="contact__title">LinkedIn</h3><span class="contact__subtitle"><a href="https://www.linkedin.com/in/ahmad-alzein-01" target="_blank">linkedin.com/in/ahmad-alzein-01</a></span></div></div>
-        </div>
-
-        <!-- Contact Form -->
-        <form action="https://formspree.io/f/xzbndvlb" method="POST" class="contact__form grid">
-          <div class="contact__inputs grid">
-            <div class="contact__content"><label for="name" class="contact__label">Name</label><input type="text" id="name" name="name" class="contact__input" required /></div>
-            <div class="contact__content"><label for="email" class="contact__label">E-mail</label><input type="email" id="email" name="email" class="contact__input" required /></div>
-            <div class="contact__content"><label for="message" class="contact__label">Message</label><textarea id="message" name="message" rows="6" class="contact__input" required></textarea></div>
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+              <div>
+                <h3 class="contact__title">E-mail</h3>
+                <span class="contact__subtitle">ahmadalzein.fr@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle">France </span>
+              </div>
+            </div>
           </div>
-          <div class="contact__submit"><input type="submit" value="Send message" class="button button--flex" /></div>
-        </form>
+          <!-- Update the form's action to your specific form link from Formspree-->
+          <form
+            action="https://formspree.io/f/xzbndvlb"
+            method="POST"
+            class="contact__form grid"
+            id="my-form"
+            >
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="contact__label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="contact__input"
+                  required
+                  autocomplete="off"
+                  />
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="contact__input"
+                  required
+                  autocomplete="off"
+                  />
+              </div>
+              <div class="contact__content">
+                <label for="" class="contact__label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  cols="0"
+                  rows="6"
+                  class="contact__input"
+                  required
+                  ></textarea>
+              </div>
+              <div class="contact__submit">
+                <div>
+                  <input
+                    type="submit"
+                    value="Send message"
+                    class="button button--flex"
+                    id="contact__button"
+                    autocomplete="off"
+                    />
+                </div>
+                <div id="contact__status"></div>
+              </div>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
 
@@ -602,33 +734,87 @@
       <div class="footer__bg">
         <div class="footer__container container grid">
           <div>
-            <h1 class="footer__title">Ahmad Alzein</h1>
-            <span class="footer__subtitle">MLOps | 3D Computer Vision | Biometrics & Fairness | Robotics</span><br />
-            <span class="footer__subtitle">Building AI that is robust, scalable, and trustworthy.</span>
+            <h1 class="footer__title">Cyborg</h1>
+            <span class="footer__subtitle"
+              ><span id="multiple-text-footer"></span
+              ></span>
           </div>
+          <ul class="footer__links">
+            <li>
+              <a href="#about" class="footer__link">About</a>
+            </li>
+            <!-- <li>
+              <a href="#certifications" class="footer__link">Certifications</a>
+            </li> -->
+            <li>
+              <a href="#projects" class="footer__link">Projects</a>
+            </li>
+          </ul>
           <div class="footer__socials">
-            <a href="mailto:ahmadalzein.fr@gmail.com" target="_blank" class="footer__social"><i class="uil uil-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/ahmad-alzein-01" target="_blank" class="footer__social"><i class="uil uil-linkedin-alt"></i></a>
-            <a href="https://github.com/Ahmad-Alzein" target="_blank" class="footer__social"><i class="uil uil-github-alt"></i></a>
+            <a
+              href="https://www.linkedin.com/in/ahmad-alzein-01"
+              target="_blank"
+              class="footer__social"
+              >
+            <i class="uil uil-linkedin-alt"></i>
+            </a>
+            <a
+              href="https://github.com/Ahmad-Alzein"
+              target="_blank"
+              class="footer__social"
+              >
+            <i class="uil uil-github-alt"></i>
+            </a>
+            <!-- <a
+              href="https://twitter.com/cyborgcodes_"
+              target="_blank"
+              class="footer__social"
+              >
+            <i class="uil uil-twitter-alt"></i>
+            </a>
+            <!-- <a
+              href="https://instagram.com/cyborgcodes_"
+              target="_blank"
+              class="footer__social"
+              > -->
+            <!-- <i class="uil uil-instagram"></i> -->
+            </a>
+            </a> -->
+            <!-- <a
+              href="https://github.com/cyb0rg14/DeepLearning/tree/master/books"
+              target="_blank"
+              class="footer__social"
+              >
+            <i class="uil uil-books"></i>
+            </a>
+            <a
+              href="https://direct.me/cyborgcodes"
+              target="_blank"
+              class="footer__social"
+              >
+            <i class="uil uil-rocket"></i> -->
+            </a>
           </div>
         </div>
         <p class="footer__copy">&copy; 2025 Ahmad Alzein</p>
       </div>
     </footer>
-
-    <!--==================== JS ====================-->
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#home" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    <!--==================== SWIPER JS ====================-->
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--==================== SCROLL REVEAL JS ====================-->
     <script src="assets/js/scrollreveal.min.js"></script>
+    <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
-    <script>
-      var typed = new Typed("#multiple-text", {
-        strings: ["Computer Vision & AI Engineer", "MLOps & Deployment Specialist", "3D Vision & Robotics Enthusiast"],
-        typeSpeed: 80,
-        backSpeed: 60,
-        backDelay: 2000,
-        loop: true,
-      });
-    </script>
+    <!--==================== FONTAWESOME ====================-->
+    <script
+      src="https://kit.fontawesome.com/b58a420f20.js"
+      crossorigin="anonymous"
+      ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   </body>
 </html>
 
