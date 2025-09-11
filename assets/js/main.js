@@ -263,16 +263,16 @@ ScrollReveal().reveal(".contact__container", { duration: 2000, delay: 50 });
 /*==================== TYPED JS ====================*/
 const typed_home = new Typed("#multiple-text", {
   strings: ["Computer Vision & AI Engineer", "MLOps & Deployment Specialist", "3D Vision & Robotics Enthusiast"],
-  typeSpeed: 100,
-  backSpeed: 30,
-  backDelay: 1000,
+  typeSpeed: 60,
+  backSpeed: 35,
+  backDelay: 2500,
   loop: true,
 });
 
 const typed_footer = new Typed("#multiple-text-footer", {
   strings: ["Computer Vision & AI Engineer", "MLOps & Deployment Specialist", "3D Vision & Robotics Enthusiast"],
-  typeSpeed: 100,
-  backSpeed: 30,
-  backDelay: 1000,
+  typeSpeed: 60,
+  backSpeed: 35,
+  backDelay: 2500,
   loop: true,
 });
