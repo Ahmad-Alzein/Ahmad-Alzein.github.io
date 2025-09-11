@@ -268,9 +268,9 @@ const typed_home = new Typed("#multiple-text", {
     "MLOps & Deployment",
     "3D Vision & Robotics Enthusiast"
   ],
-  typeSpeed: 40,
-  backSpeed: 15,
-  backDelay: 4000,   // 4s pause after phrase
+  typeSpeed: 100,
+  backSpeed: 30,
+  backDelay: 1000,
   loop: true,
 });
 
