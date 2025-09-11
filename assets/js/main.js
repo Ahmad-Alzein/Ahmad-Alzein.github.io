@@ -263,11 +263,12 @@ ScrollReveal().reveal(".contact__container", { duration: 2000, delay: 50 });
 /*==================== TYPED JS ====================*/
 const typed_home = new Typed("#multiple-text", {
   strings: [
-    "Computer Vision & AI Engineer",
-    "MLOps & Deployment Specialist",
+    "Computer Vision ",
+    "AI Engineer" , 
+    "MLOps & Deployment",
     "3D Vision & Robotics Enthusiast"
   ],
-  typeSpeed: 60,
+  typeSpeed: 40,
   backSpeed: 15,
   backDelay: 10000,   // 4s pause after phrase
   loop: true,
@@ -276,11 +277,12 @@ const typed_home = new Typed("#multiple-text", {
 
 const typed_footer = new Typed("#multiple-text", {
   strings: [
-    "Computer Vision & AI Engineer",
-    "MLOps & Deployment Specialist",
+    "Computer Vision ",
+    "AI Engineer" , 
+    "MLOps & Deployment",
     "3D Vision & Robotics Enthusiast"
   ],
-  typeSpeed: 60,
+  typeSpeed: 40,
   backSpeed: 15,
   backDelay: 10000,   // 4s pause after phrase
   loop: true,
