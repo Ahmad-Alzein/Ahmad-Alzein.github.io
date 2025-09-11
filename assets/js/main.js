@@ -271,7 +271,7 @@ const typed_home = new Typed("#multiple-text", {
 
 const typed_footer = new Typed("#multiple-text-footer", {
   strings: ["Computer Vision & AI Engineer", "MLOps & Deployment Specialist", "3D Vision & Robotics Enthusiast"],
-  typeSpeed: 60,
+  typeSpeed: 35,
   backSpeed: 35,
   backDelay: 2500,
   loop: true,
